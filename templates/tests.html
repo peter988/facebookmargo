@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Facebook</title>
+	<style type="text/css">
+	@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;700&family=Montserrat:wght@300&family=Shadows+Into+Light&display=swap');
+		html{
+			background-color:#f0f2f5;
+		}
+		a{
+			text-decoration: none;
+		}
+		.image1{
+			margin-left: 150px;
+			margin-top: 150px;
+		}
+		.face1{
+			font-size: 25px;
+			color: black;
+			width: 550px;
+			font-weight: bold;
+			font-family:Montserrat ;
+			margin-left: 180px;
+			margin-top: -10px;
+
+		}
+		.div1{width: 396px;
+		height:375px;
+		background-color: white;
+		border-color: black;
+		border-width: 2px;
+		border-radius: 15px;
+		display: block;
+		margin-left: 800px;
+		margin-top: -230px;
+		
+		}
+		.email1{
+			width: 364px;
+			height: 52px;
+			font-size: 17px;
+			border-radius: 6px;
+			border-width: 1px;
+			margin-top: 15px;
+			padding-left: 15px;
+		}
+		.pass1{
+			width: 364px;
+			height: 52px;
+			font-size: 17px;
+			border-radius: 6px;
+			border-width: 1px;
+			margin-top: 17px;
+			padding-left: 15px;
+
+		}.log1{
+			font-size: 20px;
+			color: white;
+			background-color: 	#1877f2;
+			text-align: center;
+			width: 332px;
+			font-family: Montserrat;
+			font-weight: bold;
+			height: 55px;
+			margin-top: 19px;
+			border-radius: 6px;
+			border-color: white;
+
+		}
+		.pass2{
+			font-size: 15px;
+			font-family: Montserrat;
+			color:blue;
+			text-align: center;
+			display: block;
+			margin-top: 20px;
+
+		}
+		.hr1{
+			width: 350px;
+			margin-top: 20px;
+		}
+		.create{
+			width: 196px;
+			height: 48px;
+			background-color: #36a420;
+			border-color: white;
+			border-radius: 6px;
+			font-weight: bold;
+			font-size: 17px;
+			color: white;
+			margin-top: 20px;
+		}
+		.create2{
+			font-size: 15px;
+			color: black;
+			font-family: Montserrat;
+			margin-left: 830px;
+			
+		}
+
+
+
+			
+		
+
+		
+                     
+		
+
+		
+	</style>
+</head>
+<body>
+	<img class="image1" src="https://static.xx.fbcdn.net/rsrc.php/y8/r/dF5SId3UHWd.svg" height="106px">
+	<p class="face1">Facebook helps you connenct and share with the people in your life.</p>
+	<div class="div1">
+		<center>
+			<form action="." method="POST">{% csrf_token %}
+		<input class="email1" type="Email" name="email" placeholder="Email address or phone number">
+		<input class="pass1" type="password" name="pass" placeholder=Password >
+		<input type="submit" value="Log in" class="log1">
+		<a class="pass2" href="">Forgotten Password?</a>
+		<hr class="hr1">
+		</form><a href="/signup/"><button class="create">Create New Account</button></a>
+		</center>
+		
+	</div>
+	<p class="create2"> <a href=""><strong>Create a Page</strong></a>  for a celebrity, brand or business.</p>
+
+</body>
+</html>
